@@ -1,7 +1,7 @@
 apiVersion: "tanzu.vmware.com/v1"
 kind: SpringCloudGatewayMapping
 metadata:
-  name: tdemo2-gateway-mapping
+  name: tdemo3-gateway-mapping
   namespace: default
 spec:
   gatewayRef:
