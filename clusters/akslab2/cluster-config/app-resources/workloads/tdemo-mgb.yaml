@@ -1,0 +1,16 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  labels:
+    app.kubernetes.io/part-of: tdemo-mgb
+    apps.tanzu.vmware.com/workload-type: web
+  name: tdemo-mgb
+  namespace: default
+spec:
+  params:
+  - name: live-update
+    value: "true"
+  - name: debug
+    value: "true"
+  source:
+    image: gcr.io/pa-mbrodi/temp/tdemo-mgb:latest@sha256:b881ba929f60596fb78c67018db19c3536e9eac75e4e83ff0d3d37748bfab349

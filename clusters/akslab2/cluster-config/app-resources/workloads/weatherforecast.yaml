@@ -1,0 +1,19 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  labels:
+    app.kubernetes.io/part-of: weatherforecast
+    apps.tanzu.vmware.com/workload-type: web
+    tanzu.app.live.view: "true"
+    tanzu.app.live.view.application.flavours: steeltoe
+    tanzu.app.live.view.application.name: steeltoe-weatherforecast
+  name: weatherforecast
+  namespace: default
+spec:
+  params:
+  - name: debug
+    value: "true"
+  - name: live-update
+    value: "true"
+  source:
+    image: gcr.io/pa-mbrodi/temp/tdemo-mgb:latest@sha256:7d63d42e1854d2bd4899189812273a7014593163b770c0510926ce24c3cbc13a
