@@ -11,6 +11,9 @@ metadata:
   namespace: default
 spec:
   params:
+  - name: annotations
+    value:
+      autoscaling.knative.dev/minScale: "1"
   - name: debug
     value: "true"
   - name: live-update
