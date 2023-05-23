@@ -16,4 +16,7 @@ spec:
   - name: live-update
     value: "true"
   source:
-    image: gcr.io/pa-mbrodi/temp/tdemo-mgb:latest@sha256:7d63d42e1854d2bd4899189812273a7014593163b770c0510926ce24c3cbc13a
+    git:
+      url: https://github.com/mgbrodi/weatherforecast
+      ref:
+        branch: main
