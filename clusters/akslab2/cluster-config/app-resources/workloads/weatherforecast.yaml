@@ -16,7 +16,4 @@ spec:
   - name: live-update
     value: "true"
   source:
-    git:
-      url: https://github.com/mgbrodi/weatherforecast
-      ref:
-        branch: main
+    image: gcr.io/pa-mbrodi/temp/weatherforecast@sha256:091eefeec21157732b6639e91d4215796eeead4f48f5018a33d88f64be303861
